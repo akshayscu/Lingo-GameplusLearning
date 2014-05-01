@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Begin" >
+
+    <TextView
+        android:id="@+id/question_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="14dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/validate_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="Validate" />
+
+    <TextView
+        android:id="@+id/choice_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question_trans"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/validate_trans"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/CB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CB1"
+        android:layout_alignBottom="@+id/CB1"
+        android:layout_toRightOf="@+id/CB1"
+        android:text="@string/CB2" />
+
+    <CheckBox
+        android:id="@+id/CB3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CB2"
+        android:layout_alignBottom="@+id/CB2"
+        android:layout_toRightOf="@+id/CB2"
+        android:text="@string/CB3" />
+
+    <CheckBox
+        android:id="@+id/CB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/choice_trans"
+        android:layout_below="@+id/choice_trans"
+        android:layout_marginTop="90dp"
+        android:text="@string/CB1" />
+
+    <TextView
+        android:id="@+id/ans_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/validate_trans"
+        android:layout_below="@+id/CB2"
+        android:layout_marginTop="75dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/question_trans"
+        android:layout_toRightOf="@+id/CB3"
+        android:src="@drawable/trans" />
+
+</RelativeLayout>
